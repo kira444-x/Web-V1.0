@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 30px
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-item {
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-item:hover {
+    background-color: #555;
+}
+
+.dropdown-menu {
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    display: none;
+    padding: 0;
+    min-width: 150px;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #666;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+img{
+    float: left;
+}
+.btn{
+    position: absolute;
+    top: 8px;
+    right: 40px;
+    
+
+}
+button{
+    background-color: rgb(36, 36, 36);
+    color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: large;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item dropdown">
+                Services
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Web Design</li>
+                    <li class="dropdown-item">SEO</li>
+                    <li class="dropdown-item">Marketing</li>
+                </ul>
+            </li>
+            <li class="nav-item">Contact</li>
+        </ul>
+        <div class="btn">
+            <button>Login</button>
+        </div>
+        
+    </nav>
+    
+    <img src="/img/icons/CSS-icon.jpg" alt="" height="130px" width="130px">
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime asperiores architecto incidunt nulla. Magni est voluptas reprehenderit ipsam fuga voluptate doloribus alias voluptates laboriosam corporis minus, incidunt accusamus? Labore, ullam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam iste distinctio nulla quod facere similique necessitatibus, facilis corrupti, totam a sit non aliquam minima aspernatur qui. Quas, deleniti dignissimos! Perferendis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. A necessitatibus quis eaque quia, expedita vero tenetur vel aut dolor numquam officiis facere est enim deserunt quibusdam harum maiores sunt aperiam.
+    </p>
+    
+    
+</body>
+</html>

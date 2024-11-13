@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input</title>
+    <link rel="stylesheet" href="input.css">
+  </head>
+  <body leftmargin="10%">
+    <h1>input</h1>
+    <p>In HTML, the <span>Input</span> element is used to create interactive controls in web forms that accept user data. It can accept a variety of input types based on the type attribute. Here's a breakdown of the different input types, attributes, and how they work:</p>
+    <h3>1. Basic Syntax</h3>
+    <p>input type="..."</p>
+    <h3>2. Input Types</h3>
+    <p>The <span>input</span> element supports many different input types, each of which creates a different form control.</p>
+    <h4>Textual Inputs</h4>
+    <table border="1px" cellspacing="0px">
+      <tr><th>input</th><th>output</th><th>description</th></tr>
+
+      <tr><td>Search</td><td><input type="search"></td><td>A search field, typically styled differently by browsers</td></tr>
+
+      <tr><td>text</td><td><input type="text"></td><td>A single-line text field</td></tr>
+
+      <tr><td>email</td><td><input type="email"></td><td>A field for entering email addresses, with validation</td></tr>
+    
+      <tr><td>password</td><td><input type="password"></td><td>A password input, where characters are masked</td></tr>
+
+      <tr><td>number</td><td><input type="number"></td><td> A numeric input with increment/decrement buttons</td></tr>
+
+      <tr><td>tel</td><td><input type="tel"></td><td>For entering telephone numbers</td></tr>
+
+      <tr><td>url</td><td><input type="url"></td><td>For entering URLs, with validation</td></tr>
+    </table>
+    <h4>Date & Time Inputs</h4>
+    <table border="1px" cellspacing="0px">
+      <tr><th>input</th><th>output</th><th>description</th></tr>
+
+        <tr><td>date</td><td><input type="date"></td><td>A control for entering a date (year, month, day)</td></tr>
+
+        <tr><td>datetime-local</td><td><input type="datetime-local"></td><td>A control for entering a date and time, with no timezone</td></tr>
+
+        <tr><td>time</td><td><input type="time"></td><td> For entering a time (hours, minutes, and optionally seconds)</td></tr>
+
+        <tr><td>month</td><td><input type="month"></td><td>A control for selecting a month and year</td></tr>
+
+        <tr><td>week</td><td><input type="week"></td><td>For selecting a week in a given year</td></tr>
+    </table>
+    <h4>Choice Inputs</h4>
+    <table border="1px" cellspacing="0px">
+      <tr><th>input</th><th>output</th><th>description</th></tr>
+
+        <tr><td>radio</td><td><input type="radio" name="colors">red <input type="radio" name="colors">bleu</td><td> A single-choice control; only one option in a group can be selected</td></tr>
+
+        <tr><td>checkbox</td><td><input type="checkbox">white<input type="checkbox">black</td><td>Allows multiple selections from a set of options</td></tr>
+
+        <tr><td>file</td><td><input type="file"></td><td>A control for file uploads</td></tr>
+
+        <tr><td>select</td><td><select><option>red</option><option>bleu</option></select></td><td>Creates a dropdown list (not an input, but often used for choices)</td></tr>
+
+        <tr><td>range</td><td><input type="range"></td><td>A slider control that allows the user to select a value from a specified numeric range</td></tr>
+      </table>
+      <h4>Buttons</h4>
+      <table border="1px" cellspacing="0px">
+      <tr><th>input</th><th>output</th><th>description</th></tr>
+
+      <tr><td>submit</td><td><input type="submit"></td><td>A button to submit the form</td></tr>
+      
+      <tr><td>reset</td><td><input type="reset"></td><td>A button to reset all form controls to their initial values</td></tr>
+
+      <tr><td>button</td><td><input type="button" value="Click Here"></td><td> A general-purpose button that can be programmed with JavaScript</td></tr>
+
+    </table>
+    <h3>3. pattern attribute</h3>
+    <p>The <span>pattern</span> attribute specifies a regular expression that the <span>input</span> element's value is checked against on form submission.
+    <br><br>
+    Note: The <span>pattern</span> attribute works with the following input types: text, date, search, url, tel, email, and password.
+    <br><br>  
+    <strong>Tip:</strong> Use the global title attribute to describe the pattern to help the user.</p>
+    <h4>Character Classes</h4>
+    <p>Character classes allow you to define which characters are allowed in the <span>input</span></p>
+    
+      <table>
+        <thead>
+            <tr>
+                <th>Character</th>
+                <th>Description and Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>\d</td>
+                <td>Any digit (0-9).<br>Example: <code>pattern="\d+"</code> allows one or more digits.</td>
+            </tr>
+            <tr>
+                <td>\D</td>
+                <td>Any non-digit character.<br>Example: <code>pattern="\D+"</code> allows one or more non-digit characters.</td>
+            </tr>
+            <tr>
+                <td>\w</td>
+                <td>Any word character (a-z, A-Z, 0-9, and underscores _).<br>Example: <code>pattern="\w+"</code> allows one or more word characters.</td>
+            </tr>
+            <tr>
+                <td>\W</td>
+                <td>Any non-word character.<br>Example: <code>pattern="\W+"</code> allows one or more non-word characters.</td>
+            </tr>
+            <tr>
+                <td>\s</td>
+                <td>Any whitespace character (spaces, tabs, line breaks).<br>Example: <code>pattern="\s+"</code> allows one or more whitespace characters.</td>
+            </tr>
+            <tr>
+                <td>\S</td>
+                <td>Any non-whitespace character.<br>Example: <code>pattern="\S+"</code> allows one or more non-whitespace characters.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h4>Quantifiers</h4>
+    <p>Quantifiers specify how many instances of a character or group are required.</p>
+    <table>
+      <thead>
+          <tr>
+              <th>Quantifier</th>
+              <th>Description and Example</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>+</td>
+              <td>One or more of the preceding element.<br>Example: <code>\d+</code> allows one or more digits.</td>
+          </tr>
+          <tr>
+              <td>*</td>
+              <td>Zero or more of the preceding element.<br>Example: <code>\d*</code> allows zero or more digits.</td>
+          </tr>
+          <tr>
+              <td>?</td>
+              <td>Zero or one of the preceding element (optional).<br>Example: <code>\d?</code> allows zero or one digit (optional).</td>
+          </tr>
+          <tr>
+              <td>{n}</td>
+              <td>Exactly <code>n</code> instances of the preceding element.<br>Example: <code>\d{5}</code> allows exactly 5 digits.</td>
+          </tr>
+          <tr>
+              <td>{n,}</td>
+              <td>At least <code>n</code> instances of the preceding element.<br>Example: <code>\d{3,}</code> allows at least 3 digits.</td>
+          </tr>
+          <tr>
+              <td>{n,m}</td>
+              <td>Between <code>n</code> and <code>m</code> instances of the preceding element.<br>Example: <code>\d{2,4}</code> allows between 2 and 4 digits.</td>
+          </tr>
+      </tbody>
+  </table>
+  <h4>Anchors</h4>
+  <p>Anchors are used to specify the position of the pattern in relation to the start or end of the string.</p>
+  <table>
+    <thead>
+        <tr>
+            <th>Anchor</th>
+            <th>Description and Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>^</td>
+            <td>Start of string.<br>Example: <code>^abc</code> matches "abc" only if it is at the start of the string.</td>
+        </tr>
+        <tr>
+            <td>$</td>
+            <td>End of string.<br>Example: <code>abc$</code> matches "abc" only if it is at the end of the string.</td>
+        </tr>
+        <tr>
+            <td>^pattern$</td>
+            <td>Ensures the entire input matches the pattern (from start to end).<br>Example: <code>^\d{5}$</code> ensures exactly 5 digits and no more.</td>
+        </tr>
+    </tbody>
+</table>
+<h4>Groups & Ranges</h4>
+<p>Groups allow you to group part of a pattern, and ranges let you specify a range of characters.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Expression</th>
+          <th>Description and Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>(abc)</td>
+          <td>Grouping.<br>Example: <code>(abc)+</code> allows one or more instances of "abc".</td>
+      </tr>
+      <tr>
+          <td>[abc]</td>
+          <td>Character set. Matches any one of the characters inside the brackets.<br>Example: <code>[aeiou]</code> allows any vowel (a, e, i, o, u).</td>
+      </tr>
+      <tr>
+          <td>[^abc]</td>
+          <td>Negated character set. Matches any character except the ones inside the brackets.<br>Example: <code>[^aeiou]</code> matches any character except vowels.</td>
+      </tr>
+      <tr>
+          <td>[a-z]</td>
+          <td>Range. Matches any character in the specified range.<br>Example: <code>[a-z]</code> matches any lowercase letter.</td>
+      </tr>
+      <tr>
+          <td>[A-Z]</td>
+          <td>Uppercase range.<br>Example: <code>[A-Z]</code> matches any uppercase letter.</td>
+      </tr>
+      <tr>
+          <td>[0-9]</td>
+          <td>Digit range.<br>Example: <code>[0-9]</code> matches any single digit.</td>
+      </tr>
+      <tr>
+          <td>[a-zA-Z0-9]</td>
+          <td>Alphanumeric range.<br>Example: <code>[a-zA-Z0-9]</code> matches any alphanumeric character.</td>
+      </tr>
+  </tbody>
+</table>
+<h4>Alternation</h4>
+<p>Alternation allows you to specify multiple alternatives.</p>
+<table>
+  <thead><tr><th>Alternation</th><th>Exmple</th></tr></thead>
+  <tbody><tr><td>|: Or</td><td> abc|def matches either "abc" or "def".</td></tr></tbody>
+</table>
+<h4>Literal characters</h4>
+<p>You can match literal characters like letters, numbers, or symbols.</p>
+<table><tr><th>Literal characters</th><th>Exmple</th></tr><tr><td>Any character (a, b, 1, 2, !, @, etc.) can be used directly.</td><td> pattern="abc" would match exactly "abc" and nothing else.</td></tr>
+<tr><th>Escape special characters</th><th>Exmple</th><tr><td>Use \ to escape special characters if you want them to be interpreted literally.</td><td>pattern="\." matches a literal period . and pattern="\\\\" matches a literal backslash </td></tr></tr></table>
+<h4> Examples Combining Everything</h4>
+<p>Here are some practical examples of patterns combining the above components:</p>
+<p>Phone number(xxx-xxx-xxxx) :</p>
+<input type="text" pattern="\d{3}-\d{3}-\d{4}" title="Enter a phone number in the format xxx-xxx-xxxx" placeholder="(xxx-xxx-xxxx)" class="check">
+
+<p><fieldset><legend><strong>html code</strong></legend><span class="code">input type="text" pattern="\d{3}-\d{3}-\d{4}" title="Enter a phone number in the format xxx-xxx-xxxx"</span></fieldset>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>alert('welcom');</script>
+  </body>
+</html>

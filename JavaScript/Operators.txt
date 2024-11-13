@@ -1,0 +1,53 @@
+*Comparison Operators :
+
+> greater than
+< less than
+>= greater than or equal tào
+<= less than or equal to
+=== equal to (require same type 5 = 5) we use the must
+== equal to (don't require same type 5 = "5")
+!== not equal to (require same type) we use the must
+!= not equal to (don't require same type)
+
+*Logical Operations :
+  && : and           true && false = false
+  || : or            true || false = true
+  ! : not           !true = false
+
+*Ternary Operator ? : value ? 
+ (short cut for if statments)
+ // if(true){truthy}else{false} //
+ and we can save it in variable
+ const result = true ? 'truthy' : 'false'
+
+*Guard Operator && : value1 && value2
+ Stops early(short-circuits) like if value1 Falsy
+ (short cut for if statments)
+ let message;  if(5){message = 'hello';}
+ const message = 5 && 'hello';
+
+*Default Operator || : value1 || value2
+ Stops early(short-circuits) like if value1 truthy
+ checks if at least one side is truthy
+ const x = value1 || Default value
+ (shortcut) let x ; if(!value1){x = Default value} 
+
+
+*Falsy Values :(Any values not on the list is Truthly)
+ false
+  0
+  ''
+  NaN              (Not a Numbr)
+  undefined        (something dosn't have a value and   cant use it with const only with let)(cost x = undefine)
+  null                
+
+
+*Order of Operations :
+1. (...)
+2. * /
+3. + -
+4. comarison Operators
+5. logical Operations
+
+*if statments :
+- have a Scope limits where a variable exists only inside curly bracket {} and they don't exists out side the {}  /var dosn't follow rools of scope/

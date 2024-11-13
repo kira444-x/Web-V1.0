@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NavBar2</title>
+  <style>
+    *{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    body{
+      background-image: url("/projects/navigation bar/midtown-manhattan-new-york-city-usa.jpg");
+      background-repeat:no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    li, a , button{
+      font-weight: 500;
+      font-size: 16px;
+      color: #000000;
+      text-decoration: none;
+    }
+    header{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 30px 10%;
+    }
+    img{
+      cursor: pointer;
+      margin-right: auto;
+    }
+    .navLinks{
+      list-style: none;
+    }
+    .navLinks li {
+      display:inline-block; /*make them side by side*/
+      padding: 0px 20px;
+    }
+    .navLinks li a {
+      transition: all 0.3s ease 0s;
+    }
+    .navLinks li a:hover{
+      color: #0088a9;
+    }
+    button{
+      padding:9px 25px;
+      background-color: rgba(0,136,169,1);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      margin-left: 20px;
+      color: aliceblue;
+    }
+    button:hover{
+      background-color: rgba(0,136,169,0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <img src="/img/icons/CSS-icon.jpg" alt="logo" height="50px" width="50px">
+  <nav>
+    <ul class="navLinks">
+      <li><a href="">Sevices</a></li>
+      <li><a href="">Projects</a></li>
+      <li><a href="">About</a></li>
+    </ul>
+  </nav>
+  <a class="btn" href=""><button>Contact</button></a>
+  </header>
+</body>
+</html>

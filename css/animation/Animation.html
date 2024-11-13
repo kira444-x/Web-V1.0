@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <style>
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-300px);
+      }
+      to {transform:translateX(0px);}
+      
+    }
+    .slideInLeft{
+      animation: slideInLeft 1s ease-in 5;
+      /*animation-name: slideInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-in;
+      animation-delay: 0s;
+      animation-iteration-count: 5;
+      animation-direction: normal;
+      animation-fill-mode: ;*/
+    }
+    h1{
+      text-align: center;
+      margin-top: 200px;
+      font-family: cursive;
+    }
+  </style>
+</head>
+<body>
+  <h1 class=slideInLeft>Hello, World!</h1>
+</body>
+</html>

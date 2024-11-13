@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lists</title>
+    <link rel="stylesheet" href="lists.css">
+</head>
+<body leftmargin="10%">
+   <h1>lists</h1>
+   <p>In HTML, lists are used to group related items together. There are three types of lists:</p>
+
+   <h2>1. Ordered List ol</h2>
+   <p>An ordered list is used to create a list of items that are numbered sequentially. Each item in the list is created using the li (list item) tag.</p>
+   <ol>exmple :
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+   </ol>
+   <h3>Attributes of ol</h3>
+   <p><pre>type: Specifies the type of numbering. Values include:
+    1: Default, numbers (1, 2, 3, …)
+    A: Uppercase letters (A, B, C, …)
+    a: Lowercase letters (a, b, c, …)
+    I: Uppercase Roman numerals (I, II, III, …)
+    i: Lowercase Roman numerals (i, ii, iii, …)</pre></p>
+    <p>start: You can specify starting number of the list using the start attribute:<br>ol start='5' (This will start the list from 5: )
+    </p>
+
+    <h2>2. Unordered List ul</h2>
+    <p>An unordered list is used for items where the order doesn't matter. The items are marked with disc (default).</p>
+    <ul>exmple:
+        <li>red</li>
+        <li>white</li>
+        <li>pink</li>
+    </ul>
+    <h3>Attributes of ul</h3>
+    <p><pre>type: Specifies the bullet style. Values include:
+    disc: Default, filled circle
+    circle: Unfilled circle
+    square: Square bullet</pre></p>
+
+    <h2>3. Definition list dl</h2>
+    <p>A definition list is used for terms and their descriptions. The terms are defined using the dt tag and the descriptions are provided with the dd tag.</p>
+    <dl>exmple:
+        <dt>Term 1</dt>
+        <dd>Description of term 1</dd>
+        <dt>Term 2</dt>
+        <dd>Description of term 2</dd>
+      </dl>
+
+      <dl>exmple:
+        <dt>HTML</dt>
+        <dd>A markup language for creating web pages.</dd>
+        <dt>CSS</dt>
+        <dd>A stylesheet language for styling web pages.</dd>
+      </dl>
+      <h2>4. Nesting Lists</h2>
+      <p>Lists can be nested inside other lists.</p>
+      
+      <ul>exmple
+        <li>Fruits
+          <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+          </ul>
+        </li>
+        <li>Vegetables
+          <ol>
+            <li>Carrot</li>
+            <li>Broccoli</li>
+          </ol>
+        </li>
+      </ul>
+      <h3>Conclusion</h3>
+      <p><pre>
+        Use ol for ordered (numbered) lists.
+        Use ul for unordered (bulleted) lists.
+        Use dl for definition lists (terms and descriptions).</pre></p>
+      
+</body>
+</html>

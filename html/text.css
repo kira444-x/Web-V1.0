@@ -1,0 +1,43 @@
+p{
+    font-family: arial;
+}
+.{
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: bold;
+    width: 400px;
+    margin-bottom: 0px;
+    }
+.txt2{
+    color: gray;
+    margin-top: 0px;        
+}
+.txt3{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 325px;
+    line-height: 20px;
+}
+.btn{
+    color: white;
+    background-color: rgb(19, 150, 19);
+    border: solid;
+    border-radius: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+.txt4{
+    color: white;
+    background-color: rgb(226, 75, 75);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.exmple:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    cursor: pointer;
+}
